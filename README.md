@@ -1,5 +1,3 @@
----
-
 # 🧠 Forecasting Dengue Cases & Evaluating Public Health Interventions in Singapore
 > Predicting outbreaks and assessing the cost-effectiveness of Wolbachia vs. Dengvaxia®
 
