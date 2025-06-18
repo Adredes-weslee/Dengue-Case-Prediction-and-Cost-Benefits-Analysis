@@ -1,0 +1,32 @@
+{
+    "analysis_metadata": {
+        "base_year": 2020,
+        "total_cases_analyzed": 35068,
+        "population": 5540000,
+        "analysis_date": "2025-06-18 15:22:58"
+    },
+    "wolbachia": {
+        "total_cost_usd": 26315000.0,
+        "cost_per_person_usd": 4.75,
+        "cases_averted": 27002.0,
+        "dalys_averted": 1215.11,
+        "cost_per_daly_averted_usd": 21656.54,
+        "efficacy_percent": 77.0
+    },
+    "dengvaxia": {
+        "total_cost_usd": 2166140000.0,
+        "cost_per_person_usd": 391.0,
+        "cases_averted": 28721.0,
+        "dalys_averted": 1292.43,
+        "cost_per_daly_averted_usd": 1676019.66,
+        "efficacy_percent": 81.89999999999999
+    },
+    "analysis_summary": {
+        "most_cost_effective_intervention": "Wolbachia",
+        "cost_difference_per_daly_usd": 1654363.12,
+        "cost_savings_percent": 98.7,
+        "who_cost_effectiveness_threshold_usd": 1800,
+        "wolbachia_meets_threshold": false,
+        "dengvaxia_meets_threshold": false
+    }
+}
