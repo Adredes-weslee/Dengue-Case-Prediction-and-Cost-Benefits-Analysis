@@ -15,9 +15,9 @@ env/
 
 #Ignore data files - these should not be committed to Git
 Add specific data files if they are large
-/data/raw/
-/data/processed/
-/data/output/
+# /data/raw/
+# /data/processed/
+# /data/output/
 
 #Ignore OS-specific files
 .DS_Store
