@@ -275,7 +275,7 @@ If you use this platform in your research, please cite:
 ````
 Singapore Dengue Forecasting Platform (2024)
 "Dengue Case Prediction and Cost-Benefits Analysis Platform"
-Available at: https://github.com/yourusername/Dengue-Case-Prediction-and-Cost-Benefits-Analysis
+Available at: https://github.com/Adredes-weslee/Dengue-Case-Prediction-and-Cost-Benefits-Analysis
 ````
 
 ### 🔗 **References**
