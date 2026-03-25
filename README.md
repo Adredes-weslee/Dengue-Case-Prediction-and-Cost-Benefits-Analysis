@@ -5,9 +5,33 @@ A file-based Singapore dengue decision-support app: weekly outbreak forecasting 
 Built around four local inputs: dengue surveillance, weather, Google Trends, and population CSVs.
 
 <!-- README_SURFACE_START -->
-![Python](https://img.shields.io/badge/Python-Forecasting-3776AB?style=flat-square&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![Health Economics](https://img.shields.io/badge/Health-Economics-166534?style=flat-square)
+```mermaid
+flowchart LR
+  raw["data/raw/*.csv<br/>cases + weather + Google Trends + population"]
+  prep["scripts/run_preprocessing.py<br/>src/data_processing.py"]
+  master["data/processed/dengue_master_timeseries.csv"]
+  train["scripts/run_training.py<br/>src/model_pipeline.py"]
+  model["data/output/forecasting_model.pkl<br/>forecasting_model_metrics.json"]
+  export["scripts/forecasting.py"]
+  preds["data/output/predictions.csv"]
+  cba["scripts/run_analysis.py<br/>src/cost_benefit_analysis.py"]
+  econ["data/output/cost_benefit_analysis.json"]
+  dash1["dashboard/pages/1_Dengue_Forecasting.py"]
+  dash2["dashboard/pages/2_Cost_Benefit_Analysis.py"]
+
+  raw --> prep --> master
+  master --> train --> model
+  model --> export --> preds
+  master --> cba --> econ
+  master --> dash1
+  model --> dash1
+  econ --> dash2
+```
 
 [![Portfolio Article](https://img.shields.io/badge/Portfolio%20Article-102A43?style=flat-square)](https://adredes-weslee.github.io/epidemiology/forecasting/health-economics/2025/06/18/forecasting-dengue-cases-and-cost-benefit-analysis.html) [![Live Demo](https://img.shields.io/badge/Live%20Demo-FF8B2B?style=flat-square)](https://adredes-weslee-dengue-case-prediction-and-c-dashboardapp-aszwww.streamlit.app/)
+
+![Python](https://img.shields.io/badge/Python-Forecasting-3776AB?style=flat-square&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![Health Economics](https://img.shields.io/badge/Health-Economics-166534?style=flat-square)
+
 ## Quickstart
 
 ```bash
