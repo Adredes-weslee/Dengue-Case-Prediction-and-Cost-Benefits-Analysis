@@ -32,6 +32,10 @@ flowchart LR
 
 ![Python](https://img.shields.io/badge/Python-Forecasting-3776AB?style=flat-square&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![Health Economics](https://img.shields.io/badge/Health-Economics-166534?style=flat-square)
 
+## Interface Preview
+
+![Interface preview](docs/screenshots/app-overview.png)
+
 ## Quickstart
 
 ```bash
