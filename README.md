@@ -4,6 +4,22 @@ A file-based Singapore dengue decision-support app: weekly outbreak forecasting 
 
 Built around four local inputs: dengue surveillance, weather, Google Trends, and population CSVs.
 
+<!-- README_SURFACE_START -->
+![Python](https://img.shields.io/badge/Python-Forecasting-3776AB?style=flat-square&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![Health Economics](https://img.shields.io/badge/Health-Economics-166534?style=flat-square)
+
+[![Portfolio Article](https://img.shields.io/badge/Portfolio%20Article-102A43?style=flat-square)](https://adredes-weslee.github.io/epidemiology/forecasting/health-economics/2025/06/18/forecasting-dengue-cases-and-cost-benefit-analysis.html) [![Live Demo](https://img.shields.io/badge/Live%20Demo-FF8B2B?style=flat-square)](https://adredes-weslee-dengue-case-prediction-and-c-dashboardapp-aszwww.streamlit.app/)
+## Quickstart
+
+```bash
+pip install -r requirements.txt
+python scripts/run_preprocessing.py
+streamlit run dashboard/app.py
+```
+
+See [Setup and Run](#setup-and-run) for the full environment and verification path.
+
+<!-- README_SURFACE_END -->
+
 ## Why This Repository Exists
 
 - Forecast weekly dengue cases up to 16 weeks ahead so public-health teams can plan response earlier.
